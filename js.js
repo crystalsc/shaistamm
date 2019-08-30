@@ -11,7 +11,7 @@ $(document).ready(function () {
         var target = $(this.hash);
         if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');
         if (target.length == 0) target = $('html');
-        $('html, body').animate({ scrollTop: target.offset().top - 100 }, 1000);
+        $('html, body').animate({ scrollTop: target.offset().top}, 1000);
         return false;
     });
 });

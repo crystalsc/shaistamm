@@ -20,15 +20,17 @@ p {
     visibility: hidden;
 }
 
+.title-middle {
+    padding-top: 25%;
+}
+
 .bg {
     /* The image used */
     background-image: url("images/background.jpg");
   
-    /* Full height */
-    height: 100%;
   
     /* Center and scale the image nicely */
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -71,7 +73,6 @@ a:focus {
 ----------------------------------------------------- */
 
 .wrapper {
-    display: flex;
     width: 100%;
 }
 
@@ -85,7 +86,6 @@ a:focus {
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
-    overflow: hidden;
 }
 
 #sidebar.active {
@@ -151,8 +151,17 @@ a[data-toggle="collapse"] {
     right: 0;
 }
 
+.good-stuff {
+    padding-left: 260px;
+    padding-top: 42%;
+}
+
 #content.active {
     width: 100%;
+}
+
+.card {
+    margin-bottom: 10px;
 }
 
 /* ---------------------------------------------------
@@ -177,5 +186,15 @@ a[data-toggle="collapse"] {
     }
     .hide-large {
         visibility: visible;
+    }
+    .good-stuff {
+        padding-left: 10px;
+        padding-top: 75%;
+    }
+}
+@media (max-width: 500px) {
+    .good-stuff {
+        padding-left: 10px;
+        padding-top: 200%;
     }
 }
