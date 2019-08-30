@@ -47,37 +47,58 @@
                 </div>
             </div>
 
-            <ul class="list-unstyled components">
+            <div class="ul list-unstyled components">
                 <p>Shaista Macan-Markar</p>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="#">Education</a>
+                    <a href="#education">Education</a>
                 </li>
                 <li>
-                    <a href="#">Experience</a>
+                    <a href="#experience">Experience</a>
                 </li>
                 <li>
-                    <a href="#">Volunteering</a>
+                    <a href="#volunteering">Volunteering</a>
                 </li>
                 <li><a href="https://www.linkedin.com/in/shaista-macan-markar/" ><i 
                   class="fab fa-linkedin mr-3"></i></a></li>
-            </ul>
+                </div> 
 
         </nav>
        
       </div>
 
-
         <!-- Page Content  -->
         <div id="content" class="bg">
-            <div class="container-fluid">
-
-                <button type="button" id="sidebarCollapse" class="hide-large btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                </button>
-            </div>
+                <nav class="hide-large navbar navbar-expand-lg ">
+                        <div class="container-fluid">
+        
+                                <button id="sidebarCollapse" class="navbar-toggler" type="button" >
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                            <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-align-justify"></i>
+                            </button> -->
+        
+                            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="nav navbar-nav ml-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Page</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Page</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </nav>
 
                 
             <div class="col-md-6 wow fadeInLeft"
@@ -89,36 +110,7 @@
 
         </div>
     
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- jQuery Custom Scroller CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-
-  </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar, #content').toggleClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
 </body>
 
 </html>

@@ -41,13 +41,17 @@ a:focus {
     transition: all 0.3s;
 }
 
+.list-sidebar {
+    list-style: none;
+}
+
 .navbar {
     padding: 15px 10px;
-    background: #fff;
+    background: transparent;
     border: none;
     border-radius: 0;
     margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
 }
 
 .navbar-btn {
@@ -62,7 +66,6 @@ a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
-
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -82,8 +85,7 @@ a:focus {
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    overflow-y: hidden; /* Disable horizontal scroll */
+    overflow: hidden;
 }
 
 #sidebar.active {
@@ -95,28 +97,28 @@ a:focus {
     background: #6d7fcc;
 }
 
-#sidebar ul.components {
+#sidebar .ul.components {
     padding: 20px 0;
     border-bottom: 1px solid #47748b;
 }
 
-#sidebar ul p {
+#sidebar .ul p {
     color: #fff;
-    padding: 10px;
+    padding: 5px;
 }
 
-#sidebar ul li a {
-    padding: 10px;
+#sidebar .ul li a {
+    padding: 5px;
     font-size: 1.1em;
     display: block;
 }
 
-#sidebar ul li a:hover {
+#sidebar .ul li a:hover {
     color: #7386D5;
     background: #fff;
 }
 
-#sidebar ul li.active>a,
+#sidebar .ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
@@ -134,34 +136,6 @@ a[data-toggle="collapse"] {
     transform: translateY(-50%);
 }
 
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
 
 /* ---------------------------------------------------
     CONTENT STYLE
